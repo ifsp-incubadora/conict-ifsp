@@ -24,6 +24,32 @@ h2{text-align:center;color:var(--green);margin-bottom:40px}
 .alt{background:var(--light)}
 .timeline .item{background:#fff;padding:18px;margin-bottom:15px;border-left:5px solid var(--green)}
 footer{background:var(--dark);color:#fff;text-align:center;padding:30px}
+.hotel-partner{background:#fff;border:2px solid var(--green);border-radius:16px;padding:30px;box-shadow:0 8px 20px rgba(55,162,47,.15);position:relative;margin-bottom:50px}
+.partner-tag{position:absolute;top:-14px;left:24px;background:var(--green);color:#fff;font-size:.8rem;font-weight:600;padding:4px 14px;border-radius:20px;text-transform:uppercase;letter-spacing:.5px}
+.partner-grid{display:grid;grid-template-columns:2fr 1fr;gap:30px;align-items:center}
+.hotel-partner h3{color:var(--dark);margin-bottom:10px}
+.hotel-partner ul,.hotel-card ul{list-style:none}
+.hotel-partner li,.hotel-card li{margin:4px 0;word-break:break-word}
+.hotel-partner a:not(.btn),.hotel-card a{color:#2b7d24;text-decoration:none}
+.hotel-partner a:not(.btn):hover,.hotel-card a:hover{text-decoration:underline}
+.promo{background:linear-gradient(135deg,#eef8ea,#d9f0d2);border-radius:12px;padding:24px;text-align:center}
+.promo p{font-size:.9rem}
+.promo-code{display:inline-block;margin-top:10px;font-size:1.8rem;font-weight:700;letter-spacing:3px;color:var(--red);border:2px dashed var(--red);border-radius:10px;padding:6px 20px;background:#fff}
+.hotel-subtitle{text-align:center;color:var(--dark)}
+.hotel-note{text-align:center;color:#777;font-size:.9rem;margin-bottom:25px}
+.hotel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+.hotel-card{background:#fff;padding:22px;border-radius:14px;box-shadow:0 5px 15px rgba(0,0,0,.08);font-size:.9rem;transition:transform .2s}
+.hotel-card:hover{transform:translateY(-4px)}
+.hotel-card h4{color:var(--dark);font-size:1.05rem;margin:8px 0}
+.hotel-dist{display:inline-block;background:#eef8ea;color:#2b7d24;font-weight:600;font-size:.8rem;padding:3px 10px;border-radius:20px}
+@media(max-width:768px){.partner-grid{grid-template-columns:1fr}}
+.speaker-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
+.speaker-card{background:#fff;border-radius:16px;padding:35px 25px 30px;text-align:center;box-shadow:0 5px 15px rgba(0,0,0,.08);border-top:5px solid var(--green);transition:transform .2s}
+.speaker-card:hover{transform:translateY(-4px)}
+.speaker-tag{display:inline-block;background:var(--red);color:#fff;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;padding:4px 14px;border-radius:20px}
+.speaker-avatar{width:90px;height:90px;margin:20px auto 15px;border-radius:50%;background:linear-gradient(135deg,var(--green),#7cc96f);color:#fff;font-size:2rem;font-weight:700;display:flex;align-items:center;justify-content:center}
+.speaker-card h3{color:var(--dark);margin-bottom:8px}
+.speaker-role{color:#666;font-size:.95rem}
 @media(max-width:768px){.hero-grid{grid-template-columns:1fr} nav .links{display:none}}
 </style>
 </head>
@@ -37,6 +63,7 @@ footer{background:var(--dark);color:#fff;text-align:center;padding:30px}
 <a href="#areas">Áreas</a>
 <a href="#cronograma">Cronograma</a>
 <a href="#programacao">Programação</a>
+<a href="#hospedagem">Hospedagem</a>
 <a href="#palestrantes">Palestrantes</a>
 <a href="#comissao">Comissão</a>
 <a href="#contato">Contato</a>
@@ -188,6 +215,7 @@ footer{background:var(--dark);color:#fff;text-align:center;padding:30px}
 <section id="programacao">
 <div class="container">
 <h2>Programação</h2>
+
     <p>A programação será divulgada posteriormente! Mas contará com:</p>
 <div class="cards">
 <div class="card">Palestras Magnas</div>
@@ -195,19 +223,183 @@ footer{background:var(--dark);color:#fff;text-align:center;padding:30px}
 <div class="card">Apresentações orais presenciais</div>
 <div class="card">Apresentações orais virtuais</div>
 </div>
+<br>
+<div class="card">
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vREHHjJ0RSwLK7HD_3tF03a26JL72TvGSBmvwGV7kyJ-R1rFJ60JQHorNceLgWE6g/pubhtml?widget=true&amp;headers=false" style="border:0; width:100%; height:600px;" loading="lazy" title="Programação do 17º CONICT"></iframe>
+</div>
 </div>
 </section>
 
-<section id="palestrantes" class="alt">
+<section id="hospedagem" class="alt">
+<div class="container">
+<h2>Hospedagem</h2>
+
+<div class="hotel-partner">
+<span class="partner-tag">Hotel parceiro</span>
+<div class="partner-grid">
+<div>
+<h3>Monreale Plus Guarulhos International Airport</h3>
+<ul>
+<li>📍 <a href="https://www.google.com/maps/search/?api=1&query=Rua%20Dr.%20Ramos%20de%20Azevedo%2C%2088%2C%20Centro%2C%20Guarulhos" target="_blank">Rua Dr. Ramos de Azevedo, 88, Centro, Guarulhos</a></li>
+<li>📞 +55 (11) 4966-7700</li>
+<li>✉️ <a href="mailto:reservas.guarulhos@monrealehotels.com">reservas.guarulhos@monrealehotels.com</a></li>
+<li>🚗 4,8 km do IFSP <i>Campus</i> Guarulhos</li>
+</ul>
+<a class="btn" href="https://www.monrealehotels.com/hotel-monreale-plus-airport-guarulhos" target="_blank">Reservar no site do hotel</a>
+</div>
+<div class="promo">
+<p>Ao reservar diretamente no site, use o código promocional</p>
+<div class="promo-code">IFSP10</div>
+</div>
+</div>
+</div>
+
+<h3 class="hotel-subtitle">Demais opções de hospedagem</h3>
+<p class="hotel-note">Ordenadas pela distância até o IFSP <i>Campus</i> Guarulhos.</p>
+<div class="hotel-grid">
+<div class="hotel-card">
+<div class="hotel-dist">2,9 km do IFSP</div>
+<h4>Hotel New City</h4>
+<ul>
+<li>📍 <a href="https://www.google.com/maps/search/?api=1&query=Rua%20Carlos%20Mesquita%2C%20197a%2C%20Parque%20Renato%20Maia%2C%20Guarulhos" target="_blank">Rua Carlos Mesquita, 197a, Parque Renato Maia, Guarulhos</a></li>
+<li>📞 +55 (11) 2461-1770</li>
+</ul>
+</div>
+<div class="hotel-card">
+<div class="hotel-dist">3,0 km do IFSP</div>
+<h4>Sables Hotel Guarulhos</h4>
+<ul>
+<li>📍 <a href="https://www.google.com/maps/search/?api=1&query=Av.%20Salgado%20Filho%2C%201176%2C%20Jardim%20Maia%2C%20Guarulhos" target="_blank">Av. Salgado Filho, 1176, Jardim Maia, Guarulhos</a></li>
+<li>📞 +55 (11) 2181-5900</li><li>✉️ <a href="mailto:reservas@sableshotel.com.br">reservas@sableshotel.com.br</a></li>
+</ul>
+</div>
+<div class="hotel-card">
+<div class="hotel-dist">4,1 km do IFSP</div>
+<h4>Airport Hotel Gru</h4>
+<ul>
+<li>📍 <a href="https://www.google.com/maps/search/?api=1&query=Av.%20Ot%C3%A1vio%20Braga%20de%20Mesquita%2C%203055%2C%20Guarulhos" target="_blank">Av. Otávio Braga de Mesquita, 3055, Guarulhos</a></li>
+<li>📞 +55 (11) 93280-8454</li><li>✉️ <a href="mailto:contato@airporthotelgru.com.br">contato@airporthotelgru.com.br</a></li>
+</ul>
+</div>
+<div class="hotel-card">
+<div class="hotel-dist">4,3 km do IFSP</div>
+<h4>Hotel Haven Guarulhos</h4>
+<ul>
+<li>📍 <a href="https://www.google.com/maps/search/?api=1&query=Rua%20Fel%C3%ADcio%20Marcondes%2C%20278%2C%20Centro%2C%20Guarulhos" target="_blank">Rua Felício Marcondes, 278, Centro, Guarulhos</a></li>
+<li>📞 +55 (11) 94994-5040</li><li>✉️ <a href="mailto:hotelcguarulhos@gmail.com">hotelcguarulhos@gmail.com</a></li>
+</ul>
+</div>
+<div class="hotel-card">
+<div class="hotel-dist">4,7 km do IFSP</div>
+<h4>Monaco Hotel &amp; Convention By Easy Class</h4>
+<ul>
+<li>📍 <a href="https://www.google.com/maps/search/?api=1&query=Rua%20Diogo%20Farias%2C%20137%2C%20Centro%2C%20Guarulhos" target="_blank">Rua Diogo Farias, 137, Centro, Guarulhos</a></li>
+<li>📞 +55 (11) 2463-7200</li><li>✉️ <a href="mailto:reservas@monacohoteis.com.br">reservas@monacohoteis.com.br</a></li>
+</ul>
+</div>
+<div class="hotel-card">
+<div class="hotel-dist">4,8 km do IFSP</div>
+<h4>Ibis Guarulhos Aeroporto</h4>
+<ul>
+<li>📍 <a href="https://www.google.com/maps/search/?api=1&query=Rua%20General%20Os%C3%B3rio%2C%2019%2C%20Centro%2C%20Guarulhos" target="_blank">Rua General Osório, 19, Centro, Guarulhos</a></li>
+<li>📞 +55 (11) 2159-5950</li><li>✉️ <a href="mailto:h5021-re@accor.com">h5021-re@accor.com</a></li>
+</ul>
+</div>
+<div class="hotel-card">
+<div class="hotel-dist">4,9 km do IFSP</div>
+<h4>Gru Inn Hotel</h4>
+<ul>
+<li>📍 <a href="https://www.google.com/maps/search/?api=1&query=Av.%20Em%C3%ADlio%20Ribas%2C%20203%2C%20Jardim%20Tijuco%2C%20Guarulhos" target="_blank">Av. Emílio Ribas, 203, Jardim Tijuco, Guarulhos</a></li>
+<li>📞 +55 (11) 2600-1770</li><li>📞 WhatsApp: +55 (11) 9 9240-0846</li><li>✉️ <a href="mailto:reserva@gruinnhotel.com.br">reserva@gruinnhotel.com.br</a></li>
+</ul>
+</div>
+<div class="hotel-card">
+<div class="hotel-dist">4,9 km do IFSP</div>
+<h4>Hotel Domani</h4>
+<ul>
+<li>📍 <a href="https://www.google.com/maps/search/?api=1&query=Rua%20Dr.%20Gast%C3%A3o%20Vidigal%2C%20165%2C%20Jardim%20Guarulhos%2C%20Guarulhos" target="_blank">Rua Dr. Gastão Vidigal, 165, Jardim Guarulhos, Guarulhos</a></li>
+<li>📞 +55 (11) 3579-9696 / 2461-3555</li><li>📞 WhatsApp: (11) 95361-9158</li><li>✉️ <a href="mailto:falecom@hoteldomani.com.br">falecom@hoteldomani.com.br</a></li>
+</ul>
+</div>
+<div class="hotel-card">
+<div class="hotel-dist">5,0 km do IFSP</div>
+<h4>Slaviero Hotel Guarulhos Aeroporto</h4>
+<ul>
+<li>📍 <a href="https://www.google.com/maps/search/?api=1&query=Rua%20Rafael%20Balzani%2C%2032%2C%20Centro%2C%20Guarulhos" target="_blank">Rua Rafael Balzani, 32, Centro, Guarulhos</a></li>
+<li>📞 +55 (11) 2475-7505</li><li>✉️ <a href="mailto:reservas.segr@slavierohoteis.com.br">reservas.segr@slavierohoteis.com.br</a></li>
+</ul>
+</div>
+<div class="hotel-card">
+<div class="hotel-dist">5,1 km do IFSP</div>
+<h4>Ipê Guaru Hotel</h4>
+<ul>
+<li>📍 <a href="https://www.google.com/maps/search/?api=1&query=Av.%20Em%C3%ADlio%20Ribas%2C%20147%2C%20Centro%2C%20Guarulhos" target="_blank">Av. Emílio Ribas, 147, Centro, Guarulhos</a></li>
+<li>📞 +55 (11) 2195-8100</li><li>✉️ <a href="mailto:gerencia@ipehotelguaru.com.br">gerencia@ipehotelguaru.com.br</a></li>
+</ul>
+</div>
+<div class="hotel-card">
+<div class="hotel-dist">5,2 km do IFSP</div>
+<h4>Mercure Guarulhos Aeroporto</h4>
+<ul>
+<li>📍 <a href="https://www.google.com/maps/search/?api=1&query=Rua%20Bar%C3%A3o%20de%20Mau%C3%A1%2C%20450%2C%20Centro%2C%20Guarulhos" target="_blank">Rua Barão de Mauá, 450, Centro, Guarulhos</a></li>
+<li>📞 +55 (11) 2475-9988</li><li>✉️ <a href="mailto:h3637-re@accor.com">h3637-re@accor.com</a></li>
+</ul>
+</div>
+<div class="hotel-card">
+<div class="hotel-dist">5,3 km do IFSP</div>
+<h4>Smart Hotel GRU</h4>
+<ul>
+<li>📍 <a href="https://www.google.com/maps/search/?api=1&query=Rua%20Ant%C3%B4nio%20Iervolino%2C%20280%2C%20Vila%20Augusta%2C%20Guarulhos" target="_blank">Rua Antônio Iervolino, 280, Vila Augusta, Guarulhos</a></li>
+<li>📞 +55 (11) 2440-2037</li><li>✉️ <a href="mailto:gerencia@hotelsmartgru.com.br">gerencia@hotelsmartgru.com.br</a></li>
+</ul>
+</div>
+<div class="hotel-card">
+<div class="hotel-dist">5,6 km do IFSP</div>
+<h4>Bristol International Guarulhos</h4>
+<ul>
+<li>📍 <a href="https://www.google.com/maps/search/?api=1&query=Rua%20Jos%C3%A9%20de%20Andrade%2C%2063%2C%20Jardim%20Santa%20Francisca%2C%20Guarulhos" target="_blank">Rua José de Andrade, 63, Jardim Santa Francisca, Guarulhos</a></li>
+<li>📞 0800 645 1816</li><li>📞 WhatsApp: +55 (41) 9 8889-7141</li><li>✉️ <a href="mailto:bristol@bristolhoteis.com.br">bristol@bristolhoteis.com.br</a></li>
+</ul>
+</div>
+<div class="hotel-card">
+<div class="hotel-dist">5,6 km do IFSP</div>
+<h4>Ibis Budget Guarulhos Aeroporto</h4>
+<ul>
+<li>📍 <a href="https://www.google.com/maps/search/?api=1&query=Av.%20Lauro%20de%20Gusm%C3%A3o%20Silveira%2C%201125%2C%20Pq.%20Ind.%20Jd.%20S%C3%A3o%20Geraldo%2C%20Guarulhos" target="_blank">Av. Lauro de Gusmão Silveira, 1125, Pq. Ind. Jd. São Geraldo, Guarulhos</a></li>
+<li>📞 +55 (11) 5108-0210</li><li>✉️ <a href="mailto:hb727-re@accor.com">hb727-re@accor.com</a></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section id="palestrantes">
 <div class="container">
 <h2>Palestrantes</h2>
-<div class="cards">
-<div class="card">Palestrantes serão definidos posteriormente</div>
+<div class="speaker-grid">
+<div class="speaker-card">
+<span class="speaker-tag">Palestra Magna</span>
+<div class="speaker-avatar">OF</div>
+<h3>Prof. Olival Freire Jr.</h3>
+<p class="speaker-role">Presidente do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq)</p>
+</div>
+<div class="speaker-card">
+<span class="speaker-tag">Mesa-redonda</span>
+<div class="speaker-avatar">🏛️</div>
+<h3>Democracia e Ciência</h3>
+<p class="speaker-role">Com deputados que apoiam a ciência</p>
+</div>
+<div class="speaker-card">
+<span class="speaker-tag">Mesa-redonda</span>
+<div class="speaker-avatar">🔬</div>
+<h3>Meninas nas Ciências</h3>
+<p class="speaker-role">Com a deputada federal Tabata Amaral</p>
+</div>
 </div>
 </div>
 </section>
 
-<section id="comissao">
+<section id="comissao" class="alt">
 <div class="container">
 <h2>Comissão Organizadora</h2>
 <div class="cards">
@@ -248,7 +440,7 @@ footer{background:var(--dark);color:#fff;text-align:center;padding:30px}
 </div>
 </section>
 
-<section id="contato" class="alt">
+<section id="contato">
 <div class="container">
 <h2>Contato</h2>
 <p>Email: conict@ifsp.edu.br</p>
